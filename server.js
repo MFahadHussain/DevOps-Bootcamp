@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const prices = { tomato: 180, onion: 120, potato: 90, spinach: 60 };
 app.get("/", (req, res) => {
-  res.send("Fahad Hussain Server API is running. Try /api/prices\n");
+  res.send("SabziCart Server API is running (Developed by Fahad Hussain). Try /api/prices\n");
 });
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok", server: os.hostname(), node: process.version });
